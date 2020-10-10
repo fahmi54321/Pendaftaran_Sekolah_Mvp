@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="30dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@color/colorOrange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="3"
+                android:src="@drawable/pnp"></ImageView>
+
+            <TextView
+                android:id="@+id/txtJudul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/vbold"
+                android:gravity="center"
+                android:src="@drawable/pnp"
+                android:text="@string/data_periodik_sd_30"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"></TextView>
+        </LinearLayout>
+        <View
+            android:layout_margin="8dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/colorBlack" />
+        <TableLayout
+            android:layout_margin="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/idPeriodik"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/id_periodik"
+                    android:textColor="@color/colorBlack"></TextView>
+                <TextView
+                    android:text=" : "></TextView>
+
+                <TextView
+                    android:id="@+id/txtIdPeriodik"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/id_periodik"
+                    android:textColor="@color/colorBlack"></TextView>
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/idUser"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/id_user"
+                    android:textColor="@color/colorBlack"></TextView>
+                <TextView
+                    android:text=" : "></TextView>
+
+                <TextView
+                    android:id="@+id/txtIdUser"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/id_user"
+                    android:textColor="@color/colorBlack"></TextView>
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/tinggiBadan"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/tinggi_badan"
+                    android:textColor="@color/colorBlack"></TextView>
+                <TextView
+                    android:text=" : "></TextView>
+
+                <TextView
+                    android:id="@+id/txtTinggiBadan"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/tinggi_badan"
+                    android:textColor="@color/colorBlack"></TextView>
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/beratBadan"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/berat_badan"
+                    android:textColor="@color/colorBlack"></TextView>
+                <TextView
+                    android:text=" : "></TextView>
+
+                <TextView
+                    android:id="@+id/txtBeratBadan"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/berat_badan"
+                    android:textColor="@color/colorBlack"></TextView>
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/jarakKeSekolah"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/jarak_tempat_tinggal_ke_sekolah"
+                    android:textColor="@color/colorBlack"></TextView>
+                <TextView
+                    android:text=" : "></TextView>
+
+                <TextView
+                    android:id="@+id/txtJarakKeSekolah"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/jarak_tempat_tinggal_ke_sekolah"
+                    android:textColor="@color/colorBlack"></TextView>
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/sebutkan"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/sebutkan_dalam_km"
+                    android:textColor="@color/colorBlack"></TextView>
+                <TextView
+                    android:text=" : "></TextView>
+
+                <TextView
+                    android:id="@+id/txtSebutkan"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/sebutkan_dalam_km"
+                    android:textColor="@color/colorBlack"></TextView>
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/waktuKeSekolah"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/waktu_tempuh_ke_sekolah"
+                    android:textColor="@color/colorBlack"></TextView>
+                <TextView
+                    android:text=" : "></TextView>
+
+                <TextView
+                    android:id="@+id/txtWaktuKeSekolah"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/waktu_tempuh_ke_sekolah"
+                    android:textColor="@color/colorBlack"></TextView>
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/jmlSaudara"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/jml_saudara_kandung"
+                    android:textColor="@color/colorBlack"></TextView>
+                <TextView
+                    android:text=" : "></TextView>
+
+                <TextView
+                    android:id="@+id/txtJmlSaudara"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/jml_saudara_kandung"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginBottom="16dp"></TextView>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlue"
+    tools:context=".view.PribadiDuaActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearLayout9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtNoAkte"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/vregular"
+                        android:text="@string/no_akte"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/idUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/vregular"
+                        android:text="@string/no_akte"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/edtAkte"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bttn_input"
+                        android:ems="10"
+                        android:fontFamily="@font/vregular"
+                        android:inputType="text"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/ketNoAkte"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/vlight"
+                        android:text="Ket : Nomor registrasi Akta Kelahiran. Nomor registrasi yang dimaksud umumnya tercantum pada bagian tengah atas lembar kutipan akta kelahiran "
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtAgama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/vregular"
+                        android:text="@string/agama_kepercayaan"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
+
+                    <Spinner
+                        android:id="@+id/spinnerAgama"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bttn_input"
+                        android:entries="@array/agama"
+                        android:fontFamily="@font/vregular"
+                        android:inputType="text"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/ketAgama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/vlight"
+                        android:text="Ket : Agama atau kepercayaan yang dianut oleh peserta didik. Apabila peserta didik adalah penghayat kepercayaan (misalnya pada daerah tertentu yang masih memiliki penganut kepercayaan), dapat memilih opsi  Kepercayaan kpd Tuhan YME "
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtKewarganegaraan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/vregular"
+                        android:text="@string/kewarganegaraan"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/rbWni"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vregular"
+                            android:text="@string/wni"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/rbWna"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vregular"
+                            android:text="@string/wna"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"></RadioButton>
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/ketKewarganegaraan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/vlight"
+                        android:text="Ket : Kewarganegaraan peserta didik "
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtBerkebutuhanKhusus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/vregular"
+                        android:text="@string/berkebutuhan_khusus"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TableRow>
+
+                                <CheckBox
+                                    android:id="@+id/cbTidak"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/vregular"
+                                    android:text="@string/tidak"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="14sp"></CheckBox>
+
+                                <CheckBox
+                                    android:id="@+id/cbNetra"
+                                    android:fontFamily="@font/vregular"
+                                    android:text="@string/netra"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="14sp"></CheckBox>
+
+                                <CheckBox
+                                    android:id="@+id/cbIndigo"
+                                    android:fontFamily="@font/vregular"
+                                    android:text="@string/indigo"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="14sp"></CheckBox>
+                            </TableRow>
+
+                            <TableRow>
+
+                                <CheckBox
+                                    android:id="@+id/cbBakatIstimewa"
+                                    android:fontFamily="@font/vregular"
+                                    android:text="@string/bakat_istimewa"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="14sp"></CheckBox>
+
+                                <CheckBox
+                                    android:id="@+id/cbNarkoba"
+                                    android:fontFamily="@font/vregular"
+                                    android:text="@string/narkoba"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="14sp"></CheckBox>
+
+                                <CheckBox
+                                    android:id="@+id/cbAutis"
+                                    android:fontFamily="@font/vregular"
+                                    android:text="@string/autis"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="14sp"></CheckBox>
+                            </TableRow>
+
+                            <TableRow>
+
+                                <CheckBox
+                                    android:id="@+id/cbTunaGanda"
+                                    android:fontFamily="@font/vregular"
+                                    android:text="@string/tuna_ganda"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="14sp"></CheckBox>
+
+                                <CheckBox
+                                    android:id="@+id/cbHiperAktif"
+                                    android:fontFamily="@font/vregular"
+                                    android:text="@string/hiper_aktif"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="14sp"></CheckBox>
+
+                                <CheckBox
+                                    android:id="@+id/cbLaras"
+                                    android:fontFamily="@font/vregular"
+                                    android:text="@string/laras"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="14sp"></CheckBox>
+                            </TableRow>
+
+                            <TableRow>
+
+                                <CheckBox
+                                    android:id="@+id/cbCerdasIstimewa"
+                                    android:fontFamily="@font/vregular"
+                                    android:text="@string/cerdas_istimewa"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="14sp"></CheckBox>
+
+                                <CheckBox
+                                    android:id="@+id/cbKesulitanBelajar"
+                                    android:fontFamily="@font/vregular"
+                                    android:text="@string/kesulitan_belajar"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="14sp"></CheckBox>
+
+                                <CheckBox
+                                    android:id="@+id/cbRungu"
+                                    android:fontFamily="@font/vregular"
+                                    android:text="@string/rungu"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="14sp"></CheckBox>
+                            </TableRow>
+
+                            <TableRow>
+
+                                <CheckBox
+                                    android:id="@+id/cbDownSindrome"
+                                    android:fontFamily="@font/vregular"
+                                    android:text="@string/down_sindrome"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="14sp"></CheckBox>
+
+                                <CheckBox
+                                    android:id="@+id/cbDeksaSedang"
+                                    android:fontFamily="@font/vregular"
+                                    android:text="@string/deksa_sedang"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="14sp"></CheckBox>
+
+                                <CheckBox
+                                    android:id="@+id/cbWicara"
+                                    android:fontFamily="@font/vregular"
+                                    android:text="@string/wicara"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="14sp"></CheckBox>
+                            </TableRow>
+
+                            <TableRow>
+
+                                <CheckBox
+                                    android:id="@+id/cbGrahitaRingan"
+                                    android:fontFamily="@font/vregular"
+                                    android:text="@string/grahita_ringan"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="14sp"></CheckBox>
+
+                                <CheckBox
+                                    android:id="@+id/cbDeksaRingan"
+                                    android:fontFamily="@font/vregular"
+                                    android:text="@string/deksa_ringan"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="14sp"></CheckBox>
+                            </TableRow>
+                        </TableLayout>
+                    </HorizontalScrollView>
+
+                    <TextView
+                        android:id="@+id/ketBerkebutuhanKhusus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/vlight"
+                        android:text="Ket : Kebutuhan khusus yang disandang oleh peserta didik. Dapat dipilih lebih dari satu"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtAlamat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/vregular"
+                        android:text="@string/alamat_jalan"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edtAlamatJalan"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bttn_input"
+                        android:ems="10"
+                        android:fontFamily="@font/vregular"
+                        android:inputType="text"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/ketAlamat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/vlight"
+                        android:text="Ket : Jalur tempat tinggal peserta didik, terdiri atas gang, kompleks, blok, nomor rumah, dan sebagainya selain informasi yang diminta oleh kolom-kolom yang lain pada bagian ini. Sebagai contoh, peserta didik tinggal di sebuah kompleks perumahan Griya Adam yang berada pada Jalan Kemanggisan, dengan nomor rumah 4-C, di lingkungan RT 005 dan RW 011, Dusun Cempaka, Desa Salatiga. Maka dapat diisi dengan Jl. Kemanggisan, Komp. Griya Adam, No. 4-C"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtRt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vregular"
+                            android:text="@string/rt"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/edtRt"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/bttn_input"
+                            android:ems="10"
+                            android:fontFamily="@font/vregular"
+                            android:inputType="text"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorBlack" />
+
+                        <TextView
+                            android:id="@+id/ketRt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/vlight"
+                            android:text="Ket : Nomor RT tempat tinggal peserta didik saat ini. Dari contoh di atas, misalnya dapat diisi dengan angka 5"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtRw"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vregular"
+                            android:text="@string/rw"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/edtRw"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/bttn_input"
+                            android:ems="10"
+                            android:fontFamily="@font/vregular"
+                            android:inputType="text"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorBlack" />
+
+                        <TextView
+                            android:id="@+id/ketRw"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/vlight"
+                            android:text="Ket : Nomor RW tempat tinggal peserta didik saat ini. Dari contoh di atas, misalnya dapat diisi dengan angka 11."
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/bttnSimpan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bttn_sign"
+                    android:ems="10"
+                    android:fontFamily="@font/vbold"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/simpan"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorBlack"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/progressBar2"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.93" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

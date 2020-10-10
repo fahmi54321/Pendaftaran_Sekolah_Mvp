@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="30dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@color/colorOrange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="3"
+                android:src="@drawable/pnp"></ImageView>
+
+            <TextView
+                android:id="@+id/txtJudul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/vbold"
+                android:gravity="center"
+                android:src="@drawable/pnp"
+                android:text="@string/data_pribadi_dua_sd_30"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"></TextView>
+        </LinearLayout>
+        <View
+            android:layout_margin="8dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/colorBlack" />
+        <TableLayout
+            android:layout_margin="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/idPribadi"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/id_pribadi"
+                    android:textColor="@color/colorBlack"></TextView>
+                <TextView
+                    android:text=" : "></TextView>
+
+                <TextView
+                    android:id="@+id/txtIdPribadi"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/id_pribadi"
+                    android:textColor="@color/colorBlack"></TextView>
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/idUser"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/id_user"
+                    android:textColor="@color/colorBlack"></TextView>
+                <TextView
+                    android:text=" : "></TextView>
+
+                <TextView
+                    android:id="@+id/txtIdUser"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/id_user"
+                    android:textColor="@color/colorBlack"></TextView>
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/akte"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/no_akte"
+                    android:textColor="@color/colorBlack"></TextView>
+                <TextView
+                    android:text=" : "></TextView>
+
+                <TextView
+                    android:id="@+id/txtAkte"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/no_akte"
+                    android:textColor="@color/colorBlack"></TextView>
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/agama"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/agama_kepercayaan"
+                    android:textColor="@color/colorBlack"></TextView>
+                <TextView
+                    android:text=" : "></TextView>
+
+                <TextView
+                    android:id="@+id/txtAgama"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/agama_kepercayaan"
+                    android:textColor="@color/colorBlack"></TextView>
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/kwn"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/kewarganegaraan"
+                    android:textColor="@color/colorBlack"></TextView>
+                <TextView
+                    android:text=" : "></TextView>
+
+                <TextView
+                    android:id="@+id/txtKwn"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/kewarganegaraan"
+                    android:textColor="@color/colorBlack"></TextView>
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/berkebutuhanKhusus"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/berkebutuhan_khusus"
+                    android:textColor="@color/colorBlack"></TextView>
+                <TextView
+                    android:text=" : "></TextView>
+
+                <TextView
+                    android:id="@+id/txtBerkebutuhanKhusus"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/berkebutuhan_khusus"
+                    android:textColor="@color/colorBlack"></TextView>
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/alamat"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/alamat_jalan"
+                    android:textColor="@color/colorBlack"></TextView>
+                <TextView
+                    android:text=" : "></TextView>
+
+                <TextView
+                    android:id="@+id/txtAlamat"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/alamat_jalan"
+                    android:textColor="@color/colorBlack"></TextView>
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/rt"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/rt"
+                    android:textColor="@color/colorBlack"></TextView>
+                <TextView
+                    android:text=" : "></TextView>
+
+                <TextView
+                    android:id="@+id/txtRt"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/rt"
+                    android:textColor="@color/colorBlack"></TextView>
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/rw"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/rw"
+                    android:textColor="@color/colorBlack"></TextView>
+                <TextView
+                    android:text=" : "></TextView>
+
+                <TextView
+                    android:id="@+id/txtRw"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/rw"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginBottom="16dp"></TextView>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

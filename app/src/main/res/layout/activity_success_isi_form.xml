@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlue"
+    tools:context=".view.SuccessIsiFormActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/icon_success_signup"
+                android:layout_width="238dp"
+                android:layout_height="274dp"
+                android:layout_marginTop="61dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/icon_success_signup" />
+
+            <TextView
+                android:id="@+id/txtKamuHebat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="24dp"
+                android:fontFamily="@font/vregular"
+                android:text="Kamu Hebat"
+                android:textColor="@color/colorWhite"
+                android:textSize="36sp"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/icon_success_signup" />
+            <TextView
+                android:id="@+id/txtId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="24dp"
+                android:fontFamily="@font/vregular"
+                android:text="Kamu Hebat"
+                android:textColor="@color/colorWhite"
+                android:textSize="36sp"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/icon_success_signup" />
+
+            <TextView
+                android:id="@+id/txtSelamatDatang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:fontFamily="@font/vregular"
+                android:gravity="center"
+                android:text="Isi Form Berhasil"
+                android:textColor="@color/colorWhite"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtKamuHebat" />
+
+            <Button
+                android:id="@+id/bttnHome"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bttn_sign"
+                android:fontFamily="@font/vbold"
+                android:text="Home"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/bttnLanjutkan"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtSelamatDatang" />
+
+            <Button
+                android:id="@+id/bttnLanjutkan"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="61dp"
+                android:background="@drawable/bttn_lanjutkan"
+                android:fontFamily="@font/vbold"
+                android:textAllCaps="false"
+                android:text="@string/lanjutkan"
+                android:textColor="@color/colorWhite"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bttnHome" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

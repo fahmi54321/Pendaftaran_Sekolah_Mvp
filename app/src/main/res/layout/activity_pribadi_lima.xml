@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.PribadiLimaActivity"
+    android:background="@color/colorBlue">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="24dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtUsulanSekolah"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/vregular"
+                        android:text="@string/usulan_dari_sekolah"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/idUser"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/vregular"
+                        android:text="@string/usulan_dari_sekolah"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/rbYaUsulan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vregular"
+                            android:text="@string/ya"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/rbTidakUsulan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vregular"
+                            android:text="@string/tidak"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"></RadioButton>
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/ketUsulanSekolah"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/vlight"
+                        android:text="Ket : Pilih Ya apabila peserta didik layak diajukan sebagai penerima manfaat Program Indonesia Pintar (seperti BSM dan sejenisnya). Pilih Tidak jika tidak memenuhi kriteria. Opsi ini khusus bagi peserta didik yang tidak memiliki KIP. Peserta didik yang memiliki KIP silakan dipilih Tidak"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtPenerimaKip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/vregular"
+                        android:text="@string/penerima_kip"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/rbYaPenerima"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vregular"
+                            android:text="@string/ya"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/rbTidakPenerima"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vregular"
+                            android:text="@string/tidak"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"></RadioButton>
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/PenerimaKip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/vlight"
+                        android:text="Ket : Pilih Ya apabila peserta didik memiliki Kartu Indonesia Pintar (KIP). Pilih Tidak jika tidak memiliki."
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:id="@+id/txtNomorKip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/vregular"
+                        android:text="@string/nomor_kip"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edtNomorKip"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bttn_input"
+                        android:ems="10"
+                        android:fontFamily="@font/vregular"
+                        android:inputType="text"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/ketNomorKip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/vlight"
+                        android:text="Ket : Nomor KIP milik peserta didik apabila sebelumnya telah dipilih sebagai penerima KIP. Nomor yang dimaksud adalah 6 digit kode yang tertera pada sisi belakang kanan atas kartu (di bawah lambang toga)."
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:id="@+id/txtNamaKip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/vregular"
+                        android:text="@string/nama_tertera_kip"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/NamaTerteraKip"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bttn_input"
+                        android:ems="10"
+                        android:fontFamily="@font/vregular"
+                        android:inputType="text"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/ketNamaKip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/vlight"
+                        android:text="Ket : Nama yang tertera pada KIP milik peserta didik"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTerimaFisikKip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/vregular"
+                        android:text="@string/terima_fisik_kip"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/rbYaTerimaFisik"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vregular"
+                            android:text="@string/ya"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/rbTidakTerimaFisik"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vregular"
+                            android:text="@string/tidak"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"></RadioButton>
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/ketTerimaFisikKip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/vlight"
+                        android:text="Ket : Status bahwa peserta didik sudah menerima atau belum menerima Kartu Indonesia Pintar secara fisik"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtAlasanMenerimaKip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/vregular"
+                        android:text="Alasan Utama Menerima KIP"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/rbPemegangPkh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vregular"
+                            android:text="@string/pemegang_pkh_kps_kip"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/rbPenerimaBSM"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vregular"
+                            android:text="@string/penerima_bsm_2014"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/rbYatimPiatu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vregular"
+                            android:text="@string/yatim_piatu_panti_asuhan_panti_sosial"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/rbDampakBencanaAlam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vregular"
+                            android:text="@string/dampak_bencana_alam"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/rbPernahDropOut"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vregular"
+                            android:text="@string/pernah_drop_out"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/rbSiswaMiskin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vregular"
+                            android:text="@string/siswa_miskin"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/rbDaerahKonflik"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vregular"
+                            android:text="@string/daerah_konflik"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/rbKeluargaTerpidana"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vregular"
+                            android:text="@string/keluarga_terpidana"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/rbKelainanFisik"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vregular"
+                            android:text="@string/kelainan_fisik"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"></RadioButton>
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/ketAlasanMenerimaKip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/vlight"
+                        android:text="Ket : Alasan utama peserta didik jika layak menerima manfaat PIP. Kolom ini akan muncul apabila dipilih Ya untuk mengisi kolom Usulan dari Sekolah (Layak PIP)."
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:id="@+id/txtBank"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/vregular"
+                        android:text="@string/bank"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edtBank"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bttn_input"
+                        android:ems="10"
+                        android:fontFamily="@font/vregular"
+                        android:inputType="text"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/ketBank"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/vlight"
+                        android:text="Ket : Cukup Jelas"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:id="@+id/txtNoBank"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/vregular"
+                        android:text="@string/no_rekening_bank"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edtNoRekBank"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bttn_input"
+                        android:ems="10"
+                        android:fontFamily="@font/vregular"
+                        android:inputType="text"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/ketNoBank"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/vlight"
+                        android:text="Ket : Cukup Jelas"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:id="@+id/txtNamaRekening"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/vregular"
+                        android:text="@string/rekening_atas_nama"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edtRekeningAtasNama"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bttn_input"
+                        android:ems="10"
+                        android:fontFamily="@font/vregular"
+                        android:inputType="text"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/ketNamaRekening"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/vlight"
+                        android:text="Ket : Cukup Jelas"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/bttnSimpan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bttn_sign"
+                    android:ems="10"
+                    android:fontFamily="@font/vbold"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/simpan"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorBlack"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/progressBar5"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.78" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

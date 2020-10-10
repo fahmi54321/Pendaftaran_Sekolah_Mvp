@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlue"
+    tools:context=".view.DataPeriodikActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearLayout9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtTinggiBadan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vregular"
+                            android:text="@string/tinggi_badan"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp" />
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/idUserDataPeriodik"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vregular"
+                            android:text="@string/tinggi_badan"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/edtTinggiBadan"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/bttn_input"
+                            android:ems="10"
+                            android:fontFamily="@font/vregular"
+                            android:inputType="numberDecimal"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorBlack" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vregular"
+                            android:text=""
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/vlight"
+                            android:text=""
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/txtCm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/vregular"
+                            android:text="Cm"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ketTinggiBadan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/vlight"
+                    android:text="Ket : Tinggi badan peserta didik dalam satuan sentimeter"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtBeratBadan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vregular"
+                            android:text="@string/berat_badan"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/edtBeratBadan"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/bttn_input"
+                            android:ems="10"
+                            android:fontFamily="@font/vregular"
+                            android:inputType="numberDecimal"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorBlack" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vregular"
+                            android:text=""
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/vlight"
+                            android:text=""
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/txtKg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/vregular"
+                            android:text="Kg"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ketBeratBadan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/vlight"
+                    android:text="Ket : Berat badan peserta didik dalam satuan kilogram"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtJarakTempatTinggal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/vregular"
+                        android:text="@string/jarak_tempat_tinggal_ke_sekolah"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rbKurang1Km"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vregular"
+                            android:text="@string/kuang_dari_1_km"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/rbLebih1Km"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vregular"
+                            android:text="@string/lebih_dari_1_km"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"></RadioButton>
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/ketJarakTempatTinggal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/vlight"
+                        android:text="Ket : Jarak rumah peserta didik ke sekolah, kurang dari 1 km atau lebih dari 1 km."
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtSebutkan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/sebutkan_dalam_km"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edtKm"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/bttn_input"
+                            android:ems="10"
+                            android:fontFamily="@font/vregular"
+                            android:inputType="numberDecimal"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorBlack" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vregular"
+                            android:text=""
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/txtKm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/vregular"
+                            android:text="Km"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ketSebutkan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/vlight"
+                    android:text="Ket : Apabila jarak rumah peserta didik ke sekolah lebih dari 1 km, isikan dengan angka jarak yang sebenarnya pada kolom ini dalam satuan kilometer. Diisi dengan bilangan bulat (bukan pecahan)"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txtWaktuTempuh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/waktu_tempuh_ke_sekolah"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/waktuTempuhJam"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/bttn_input"
+                            android:ems="10"
+                            android:fontFamily="@font/vregular"
+                            android:inputType="numberDecimal"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorBlack" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vregular"
+                            android:text=""
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/txtJam"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/vregular"
+                            android:text="Jam"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/waktuTempuhMenit"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/bttn_input"
+                            android:ems="10"
+                            android:fontFamily="@font/vregular"
+                            android:inputType="numberDecimal"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorBlack" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vregular"
+                            android:text=""
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/txtMenit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/vregular"
+                            android:text="Menit"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ketWaktuTempuh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/vlight"
+                    android:text="Ket : Lama tempuh peserta didik ke sekolah. Kolom kiri adalah jam, kolom kanan adalah menit. Misalnya, peserta didik memerlukan waktu tempuh 1 jam 15 menit, maka kotak kiri diisi 1 sedangkan kanan diisi 15. Apabila memerlukan waktu 25 menit, maka kotak kiri diisi 0 sedangkan kanan diisi 25"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txtJmlSaudara"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/vregular"
+                    android:text="@string/jml_saudara_kandung"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edtJmlSaudaraKandung"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/bttn_input"
+                            android:ems="10"
+                            android:fontFamily="@font/vregular"
+                            android:inputType="number"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorBlack" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ketJmlSaudara"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/vlight"
+                    android:text="Ket : Jumlah saudara kandung yang dimiliki peserta didik. Jumlah saudara kandung dihitung tanpa menyertakan peserta didik, dengan rumus jumlah kakak ditambah jumlah adik. Isikan 0 apabila anak tunggal."
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/bttnSimpan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bttn_sign"
+                    android:ems="10"
+                    android:fontFamily="@font/vbold"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/simpan"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorBlack"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/progressBar2"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.93" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

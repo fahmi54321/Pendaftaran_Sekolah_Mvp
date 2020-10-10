@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlue"
+    tools:context=".view.DataWaliActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearLayout9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtNamaWali"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/vregular"
+                        android:text="@string/nama_wali"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/idUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/vregular"
+                        android:text="@string/nama_ayah_kandung"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edtNamaWali"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bttn_input"
+                        android:ems="10"
+                        android:fontFamily="@font/vregular"
+                        android:inputType="text"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/ketNamaWali"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/vlight"
+                        android:text="Ket : Nama ayah kandung peserta didik sesuai dokumen resmi yang berlaku. Hindari penggunaan gelar akademik atau sosial (seperti Alm., Dr., Drs., S.Pd, dan H.)"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:id="@+id/txtNikWali"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/vregular"
+                        android:text="@string/nik_wali"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edtNikWali"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bttn_input"
+                        android:ems="10"
+                        android:fontFamily="@font/vregular"
+                        android:inputType="text"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/ketNikWali"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/vlight"
+                        android:text="Ket : Nomor Induk Kependudukan yang tercantum pada Kartu Keluarga atau KTP ayah kandung peserta didik"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTahunLahir"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/vregular"
+                        android:text="@string/tahun_lahir"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgTanggal"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_weight="3"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/vbold"
+                            android:src="@drawable/date"
+                            android:textColor="@color/colorWhite"></ImageView>
+
+                        <EditText
+                            android:id="@+id/edtTanggalLahir"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_weight="1"
+                            android:enabled="false"
+                            android:layout_marginLeft="8dp"
+                            android:background="@drawable/bttn_input"
+                            android:fontFamily="@font/vregular"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorBlack" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/ketTahunLahir"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/vlight"
+                        android:text="Ket : Tahun lahir ayah kandung peserta didik"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtPendidikan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/vregular"
+                        android:text="@string/pendidikan"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
+
+                    <Spinner
+                        android:id="@+id/spinnerPendidikan"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bttn_input"
+                        android:entries="@array/pendidikan"
+                        android:fontFamily="@font/vregular"
+                        android:inputType="text"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/ketPendidikan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/vlight"
+                        android:text="Ket : Pendidikan terakhir ayah kandung peserta didik"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtPekerjaan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/vregular"
+                        android:text="@string/pekerjaan"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
+
+                    <Spinner
+                        android:id="@+id/spinnerPekerjaan"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bttn_input"
+                        android:entries="@array/pekerjaan"
+                        android:fontFamily="@font/vregular"
+                        android:inputType="text"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/ketPekerjaan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/vlight"
+                        android:text="Ket : Pekerjaan utama ayah kandung peserta didik. Pilih Meninggal Dunia apabila ayah kandung peserta didik telah meninggal dunia"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtPenghasilanBulananWali"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/vregular"
+                        android:text="@string/penghasilan_bulanan"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TableRow>
+                                <TableRow>
+                                    <RadioGroup
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <RadioButton
+                                            android:id="@+id/rbKurang500"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/vregular"
+                                            android:text="@string/kurang5Ratus"
+                                            android:textColor="@color/colorBlack"
+                                            android:textSize="14sp"></RadioButton>
+
+                                        <RadioButton
+                                            android:id="@+id/rb5000_1Juta"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/vregular"
+                                            android:text="@string/LimaRatusSatuJuta"
+                                            android:textColor="@color/colorBlack"
+                                            android:textSize="14sp"></RadioButton>
+
+                                        <RadioButton
+                                            android:id="@+id/rb1Juta_2Juta"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/vregular"
+                                            android:text="@string/SatuJuta2Juta"
+                                            android:textColor="@color/colorBlack"
+                                            android:textSize="14sp"></RadioButton>
+
+                                        <RadioButton
+                                            android:id="@+id/rb2Juta_5Juta"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/vregular"
+                                            android:text="@string/DuaJuta5Juta"
+                                            android:textColor="@color/colorBlack"
+                                            android:textSize="14sp"></RadioButton>
+
+                                        <RadioButton
+                                            android:id="@+id/rb5Juta_20Juta"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/vregular"
+                                            android:text="@string/LimaJuta20Juta"
+                                            android:textColor="@color/colorBlack"
+                                            android:textSize="14sp"></RadioButton>
+
+                                        <RadioButton
+                                            android:id="@+id/rbLebih20Juta"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/vregular"
+                                            android:text="@string/lebih20Juta"
+                                            android:textColor="@color/colorBlack"
+                                            android:textSize="14sp"></RadioButton>
+                                    </RadioGroup>
+                                </TableRow>
+                            </TableRow>
+                        </TableLayout>
+                    </HorizontalScrollView>
+
+                    <TextView
+                        android:id="@+id/ketPenghasilanBulananWali"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/vlight"
+                        android:text="Ket : Rentang penghasilan ayah kandung peserta didik. Kosongkan kolom ini apabila ayah kandung peserta didik telah meninggal dunia atau tidak bekerja"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/bttnSimpan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bttn_sign"
+                    android:ems="10"
+                    android:fontFamily="@font/vbold"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/simpan"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorBlack"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/progressBar6"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.93" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

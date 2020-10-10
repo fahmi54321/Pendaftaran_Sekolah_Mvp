@@ -1,0 +1,239 @@
+<resources>
+    <string name="app_name">Pendaftaran Sekolah Mvp</string>
+    <string name="please_enter_your_credentials">Please enter your credentials to proceed</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="no_hp">No Hp</string>
+    <string name="alamat">Alamat</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="dont_have__an_account">Don\'t have an account?</string>
+    <string name="welcome_to">Welcome To</string>
+    <string name="sdn_30_padang_tinggi">SDN 30 Padang Tinggi</string>
+    <string name="data_siswa">Data Siswa/i</string>
+    <string name="pribadi">Pribadi</string>
+    <string name="ayah_kandung">Ayah Kandung</string>
+    <string name="ibu_kandung">Ibu Kandung</string>
+    <string name="wali">Wali</string>
+    <string name="kontak">Kontak</string>
+    <string name="periodik">Periodik</string>
+    <string name="nama_pribadi">Nama Pribadi</string>
+    <string name="laki_laki">Laki-laki</string>
+    <string name="perempuan">Perempuan</string>
+    <string name="nisn">NISN</string>
+    <string name="nik">NIK/No.KITAS(Untuk WNA)</string>
+    <string name="tempat_lahir">Tempat Lahir</string>
+    <string name="tgl_lahir">Tanggal Lahir</string>
+    <string name="simpan">Simpan</string>
+    <string name="no_akte">No Registrasi Akta Lahir</string>
+    <string name="agama_kepercayaan"><![CDATA[Agama & Kepercayaan]]></string>
+    <string name="kewarganegaraan">Kewarganegaraan</string>
+    <string name="wni">Indonesia (WNI)</string>
+    <string name="wna">Asing (WNA)</string>
+    <string name="berkebutuhan_khusus">Berkebutuhan Khusus</string>
+    <string name="tidak">Tidak</string>
+    <string name="netra">Netra</string>
+    <string name="indigo">Indigo</string>
+    <string name="bakat_istimewa">Bakat Istimewa</string>
+    <string name="narkoba">Narkoba</string>
+    <string name="autis">Autis</string>
+    <string name="tuna_ganda">Tuna Ganda</string>
+    <string name="hiper_aktif">Hiper Aktif</string>
+    <string name="laras">Laras</string>
+    <string name="cerdas_istimewa">Cerdas Istimewa</string>
+    <string name="kesulitan_belajar">Kesulitan Belajar</string>
+    <string name="rungu">Rungu</string>
+    <string name="down_sindrome">Down Sindrome</string>
+    <string name="deksa_sedang">Deksa Sedang</string>
+    <string name="wicara">Wicara</string>
+    <string name="grahita_ringan">Grahita Ringan</string>
+    <string name="deksa_ringan">Deksa Ringan</string>
+    <string name="alamat_jalan">Alamat Jalan</string>
+    <string name="rt">RT</string>
+    <string name="rw">RW</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string name="nama_dusun">Nama Dusun</string>
+    <string name="nama_kelurahan">Nama Kelurahan / Desa</string>
+    <string name="kecamatan">Kecamatan</string>
+    <string name="kode_pos">Kode Pos</string>
+    <string name="lintang">Lintang</string>
+    <string name="bujur">Bujur</string>
+    <string name="tempat_tinggal">Tempat Tinggal</string>
+    <string name="mode_transportasi">Mode Transportasi</string>
+    <string name="nomor_kartu_keluarga_sejahtara">Nomor Kartu Keluarga Sejahtera</string>
+    <string name="anak_keberapa">Anak Keberapa</string>
+    <string name="penerima_kps_pkh">Penerima KPS/PKH</string>
+    <string name="ya">Ya</string>
+    <string name="no_kps_pkh">No. KPS/PKH</string>
+    <string name="usulan_dari_sekolah">Usulan Dari Sekolah (Layak PIP)</string>
+    <string name="penerima_kip">Penerima KIP</string>
+    <string name="nomor_kip">Nomor KIP</string>
+    <string name="nama_tertera_kip">Nama Tertera Di KIP</string>
+    <string name="terima_fisik_kip">Terima Fisik Kartu (KIP)</string>
+    <string name="pemegang_pkh_kps_kip">Pemegang PKH/KPS/KIP</string>
+    <string name="penerima_bsm_2014">Penerima BSM 2014</string>
+    <string name="yatim_piatu_panti_asuhan_panti_sosial">Yatim Piatu/Panti Asuhan/Panti Sosial</string>
+    <string name="dampak_bencana_alam">Dampak Bencana Alam</string>
+    <string name="pernah_drop_out">Pernah Drop OUT</string>
+    <string name="siswa_miskin">Siswa Miskin/Rentan Miskin</string>
+    <string name="daerah_konflik">Daerah Konflik</string>
+    <string name="keluarga_terpidana">Keluarga Terpidana</string>
+    <string name="kelainan_fisik">Kelainan Fisik</string>
+    <string name="bank">Bank</string>
+    <string name="no_rekening_bank">No Rekening Bank</string>
+    <string name="rekening_atas_nama">Rekening Atas Nama</string>
+    <string name="foto">Foto</string>
+    <string name="ambil_photo">Ambil Photo</string>
+    <string name="lanjutkan">Lanjutkan Isi Form</string>
+    <string name="nama_ayah_kandung">Nama Ayah Kandung</string>
+    <string name="nik_ayah">NIK Ayah</string>
+    <string name="tahun_lahir">Tahun Lahir</string>
+    <string name="pendidikan">Pendidikan</string>
+    <string name="tidak_sekolah">Tidak Sekolah</string>
+    <string name="putus_sd">Putus SD</string>
+    <string name="sd_sederajat">SD Sederajat</string>
+    <string name="smp_sederajat">SMP Sederajat</string>
+    <string name="sma_sederajat">SMA Sederajat</string>
+    <string name="d1">D1</string>
+    <string name="d2">D2</string>
+    <string name="d3">D3</string>
+    <string name="d4s1">D4/S1</string>
+    <string name="s2">S2</string>
+    <string name="s3">S3</string>
+    <string name="pekerjaan">Pekerjaan</string>
+    <string name="tidak_bekerja">Tidak Bekerja</string>
+    <string name="nelayan">Nelayan</string>
+    <string name="petani">Petani</string>
+    <string name="peternak">Peternak</string>
+    <string name="pns_tni_polri">PNS/TNI/POLRI</string>
+    <string name="butuh">Buruh</string>
+    <string name="lain_lain">Lain-lain</string>
+    <string name="karyawan_swasta">Karyawan Swasta</string>
+    <string name="pedagang_kecil">Pedagang Kecil</string>
+    <string name="pedagang_besar">Pedagang Besar</string>
+    <string name="wiraswasta">Wiraswasta</string>
+    <string name="wirausaha">Wirausaha</string>
+    <string name="pensiunan">Pensiunan</string>
+    <string name="kurang5Ratus">Kurang Dari 500.000</string>
+    <string name="LimaRatusSatuJuta">500.000 - 1 Juta</string>
+    <string name="SatuJuta2Juta">1 Juta - 1.999.999</string>
+    <string name="DuaJuta5Juta">2 Juta - 4.999.999</string>
+    <string name="LimaJuta20Juta">5 Juta - 20 Juta</string>
+    <string name="lebih20Juta">Lebih dari 20 Juta</string>
+    <string name="penghasilan_bulanan">Penghasilan Bulanan</string>
+    <string name="nama_ibu_kandung">Nama Ibu Kandung</string>
+    <string name="nik_ibu">Nik Ibu</string>
+    <string name="nama_wali">Nama Wali</string>
+    <string name="nik_wali">Nik Wali</string>
+    <string name="no_telp_rumah">Nomor Telepon Rumah</string>
+    <string name="tinggi_badan">Tinggi Badan</string>
+    <string name="berat_badan">Berat Badan</string>
+    <string name="jarak_tempat_tinggal_ke_sekolah">Jarak tempat tinggal ke sekolah</string>
+    <string name="kuang_dari_1_km">Kurang dari 1 km</string>
+    <string name="lebih_dari_1_km">Lebih dari 1 km</string>
+    <string name="sebutkan_dalam_km">Sebutkan (dalam kilometer)</string>
+    <string name="waktu_tempuh_ke_sekolah">Waktu Tempuh ke sekolah (Jam/mnt)</string>
+    <string name="jml_saudara_kandung">Jumlah Saudara Kandung</string>
+    <string name="jenis_prestasi">Jenis Prestasi</string>
+    <string name="sains">Sains</string>
+    <string name="seni">Seni</string>
+    <string name="olahraga">Olahraga</string>
+    <string name="tingkat">Tingkat</string>
+    <string name="prestasi">Prestasi</string>
+    <string name="beasiswa">Beasiswa</string>
+    <string name="data_pribadi_satu_sd_30">Data Pribadi Satu \nSekolah Dasar Negeri 30 Padang Tinggi</string>
+    <string name="data_pribadi_dua_sd_30">Data Pribadi Dua \nSekolah Dasar Negeri 30 Padang Tinggi</string>
+    <string name="data_pribadi_tiga_sd_30">Data Pribadi Tiga \nSekolah Dasar Negeri 30 Padang Tinggi</string>
+    <string name="data_pribadi_empat_sd_30">Data Pribadi Empat \nSekolah Dasar Negeri 30 Padang Tinggi</string>
+    <string name="data_pribadi_lima_sd_30">Data Pribadi Lima \nSekolah Dasar Negeri 30 Padang Tinggi</string>
+    <string name="data_ayah_kandung_sd_30">Data Ayah Kandung \nSekolah Dasar Negeri 30 Padang Tinggi</string>
+    <string name="data_ibu_kandung_sd_30">Data Ibu Kandung \nSekolah Dasar Negeri 30 Padang Tinggi</string>
+    <string name="data_wali_sd_30">Data Wali \nSekolah Dasar Negeri 30 Padang Tinggi</string>
+    <string name="data_kontak_sd_30">Data Kontak \nSekolah Dasar Negeri 30 Padang Tinggi</string>
+    <string name="data_periodik_sd_30">Data Periodik \nSekolah Dasar Negeri 30 Padang Tinggi</string>
+    <string name="data_prestasi_sd_30">Data Prestasi \nSekolah Dasar Negeri 30 Padang Tinggi</string>
+    <string name="data_beasiswa_sd_30">Data Beasiswa \nSekolah Dasar Negeri 30 Padang Tinggi</string>
+    <string name="id_pribadi">Id Pribadi</string>
+    <string name="foto_nisn">Foto NISN</string>
+    <string name="foto_nik">Foto NIK</string>
+    <string name="id_pribadi_dua">Id Pribadi Dua</string>
+    <string name="id_user">Id User</string>
+    <string name="id_ayah_kandung">Id Ayah Kandung</string>
+    <string name="id_ibu_kandung">Id Ibu Kandung</string>
+    <string name="id_wali">Id Wali</string>
+    <string name="id_kontak">Id Kontak</string>
+    <string name="id_periodik">Id Periodik</string>
+
+    <string-array name="agama">
+        <item>Islam</item>
+        <item>Kristen/Protestan</item>
+        <item>Katholik</item>
+        <item>Hindu</item>
+        <item>Budha</item>
+        <item>Khonghucu</item>
+        <item>Kepercayaan Kepada Tuhan YME Lainnya</item>
+    </string-array>
+    <string-array name="pekerjaan">
+        <item>Tidak Bekerja</item>
+        <item>Nelayan</item>
+        <item>Petani</item>
+        <item>PNS/TNI/POLRI</item>
+        <item>Buruh</item>
+        <item>Karyawan Swasta</item>
+        <item>Pedagang Kecil</item>
+        <item>Pedagang Besar</item>
+        <item>Wiraswasta</item>
+        <item>Wirausaha</item>
+        <item>Pensiunan</item>
+        <item>Lain-lain</item>
+    </string-array>
+    <string-array name="pendidikan">
+        <item>Tidak Sekolah</item>
+        <item>Putus SD</item>
+        <item>SD Sederajat</item>
+        <item>SMP Sederajat</item>
+        <item>SMA Sederajat</item>
+        <item>D1</item>
+        <item>D2</item>
+        <item>D3</item>
+        <item>D4/S1</item>
+        <item>S2</item>
+        <item>S3</item>
+    </string-array>
+    <string-array name="tempat_tinggal">
+        <item>Bersawa Orang Tua</item>
+        <item>Wali</item>
+        <item>Kos</item>
+        <item>Asrama</item>
+        <item>Panti Asuhan</item>
+        <item>Lainnya</item>
+    </string-array>
+    <string-array name="mode_transportasi">
+        <item>Jalan Kaki</item>
+        <item>Kendaraan Pribadi</item>
+        <item>Kendaraan Umum/Angkot/Pete-pete</item>
+        <item>Jemputan Sekolah</item>
+        <item>Kereta Api</item>
+        <item>Ojek</item>
+        <item>Andong/Bendi/Sado/Dokar/Delman/Beca</item>
+        <item>Perahu penyebrangan/Rakit/Getek</item>
+    </string-array>
+    <string-array name="tingkat_prestasi">
+        <item>Sekolah</item>
+        <item>Kecamatan</item>
+        <item>Kabupaten</item>
+        <item>Provinsi</item>
+        <item>Nasional</item>
+        <item>Internasional</item>
+    </string-array>
+    <string-array name="jenis_beasiswa">
+        <item>Anak Berprestasi</item>
+        <item>Anak Miskin</item>
+        <item>Pendidikan</item>
+        <item>Unggulan</item>
+        <item>Lain - lain</item>
+    </string-array>
+</resources>

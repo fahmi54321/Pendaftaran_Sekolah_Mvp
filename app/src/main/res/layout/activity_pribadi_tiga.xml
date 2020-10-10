@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlue"
+    tools:context=".view.PribadiTigaActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearLayout10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtNamaDusun"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/vregular"
+                        android:text="@string/nama_dusun"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/txtIdUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/vregular"
+                        android:text="@string/nama_dusun"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/edtNamaDusun"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bttn_input"
+                        android:ems="10"
+                        android:fontFamily="@font/vregular"
+                        android:inputType="text"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/ketNamaDusun"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/vlight"
+                        android:text="Ket : Nama dusun tempat tinggal peserta didik saat ini. Dari contoh di atas, misalnya dapat diisi dengan Campak "
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtKelurahan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/vregular"
+                        android:text="@string/nama_kelurahan"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edtNamaKelurahan"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bttn_input"
+                        android:ems="10"
+                        android:fontFamily="@font/vregular"
+                        android:inputType="text"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/ketKelurahan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/vlight"
+                        android:text="Ket : Nama desa atau kelurahan tempat tinggal peserta didik saat ini. Dari contoh di atas, dapat diisi dengan Bayongbong "
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtKecamatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/vregular"
+                        android:text="@string/kecamatan"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edtNamaKecamatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bttn_input"
+                        android:ems="10"
+                        android:fontFamily="@font/vregular"
+                        android:inputType="text"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/ketKecamatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/vlight"
+                        android:text="Ket : Kecamatan tempat tinggal peserta didik saat ini. "
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtKodePos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/vregular"
+                        android:text="@string/kode_pos"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edtKodePos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bttn_input"
+                        android:ems="10"
+                        android:fontFamily="@font/vregular"
+                        android:inputType="text"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/ketKodePos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/vlight"
+                        android:text="Ket : Kode pos tempat tinggal peserta didik saat ini"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtLintang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/vregular"
+                        android:text="@string/lintang"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edtLintang"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bttn_input"
+                        android:ems="10"
+                        android:fontFamily="@font/vregular"
+                        android:inputType="text"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/ketLintang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/vlight"
+                        android:text="Ket : Titik koordinat tempat tinggal siswa"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtBujur"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/vregular"
+                        android:text="@string/bujur"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edtBujur"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bttn_input"
+                        android:ems="10"
+                        android:fontFamily="@font/vregular"
+                        android:inputType="text"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/ketBujur"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/vlight"
+                        android:text="Ket : Titik koordinat tempat tinggal siswa"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/bttnSimpan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bttn_sign"
+                    android:ems="10"
+                    android:fontFamily="@font/vbold"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/simpan"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorBlack"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/progressBar3"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.78" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
